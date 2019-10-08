@@ -13,6 +13,26 @@ The file `libtok1.c` is derived from the Alpino source by this command:
 
     go get github.com/pebbe/tokenize
 
+If you get an error like this:
+
+    # github.com/pebbe/tokenize
+    libtok1.c:1:1: error: unknown type name ‘version’
+     version https://git-lfs.github.com/spec/v1
+     ^
+    libtok1.c:1:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘:’ token
+     version https://git-lfs.github.com/spec/v1
+                  ^
+
+... run this command, and try again: `git lfs install`
+
+If you get an error like this:
+
+    git: 'lfs' is not a git command. See 'git --help'.
+
+... install `git-lfs` from https://git-lfs.github.com/
+
+
+
 ## Docs
 
  * [package help](http://godoc.org/github.com/pebbe/tokenize)
