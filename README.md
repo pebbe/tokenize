@@ -23,7 +23,7 @@ If you get an error like this:
      version https://git-lfs.github.com/spec/v1
                   ^
 
-... run this command, and try again: `git lfs install`
+... run this command: `git lfs install`
 
 If you get an error like this:
 
@@ -31,7 +31,11 @@ If you get an error like this:
 
 ... install `git-lfs` from https://git-lfs.github.com/
 
+For newer versions of Go, you may also need to set this:
 
+    export GOPRIVATE=github.com/pebbe/tokenize
+
+Then, try again.
 
 ## Docs
 
